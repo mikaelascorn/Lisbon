@@ -5,6 +5,17 @@ $lightgrey: #666666;
 $backgroundLight: #ececec;
 $fontBlack: #222222;
 $backgroundGrey: #f4f4f4;
+$backgroundTimer: #fafafa;
 $footerBackground: #2f2f2f;
 $topFooter: #1b1b1b;
 $bottomFooter: #100f0f;
+$white:  #ffffff;
+$line: rgba(255, 255, 255, 0.22);
+
+@mixin fontSize($scale) {
+	font-size: $scale * 1px;
+	font-size: ($scale / 10) * 1rem;
+}
+
+
+

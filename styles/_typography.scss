@@ -1,14 +1,156 @@
-
-
     // font-family: 'Poppins', sans-serif;
 
     // font-family: 'Raleway', sans-serif;
 
     // font-family: 'Open Sans', sans-serif;
 
-.header .header__title--main-title {
-  background: red;
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: $white;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: center;
+  @include fontSize(44);
+}
+p {
+  color: $grey;
+  font-family: 'Poppins', sans-serif;
+  @include fontSize(14);
+  line-height: 26px;
+  font-weight: 400px;
+}
+a {
+  font-family: 'Poppins', sans-serif;
+  @include fontSize(15);
+  font-weight: 600;
+  text-decoration: none;
+  color: $white;
+}
+.group__individual a {
+  color: $pink;
+  @include fontSize(16);
+  font-style: italic;
+  line-height: 26px;
+  text-align: left;
 }
 .text__uppercase {
   text-transform: uppercase;
+}
+header h2 {
+  font-family: 'Poppins', sans-serif;
+  color: $white;
+  @include fontSize(22);
+  font-style: italic;
+  line-height: 26px;
+  text-align: left;
+  padding-top: 0px;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: $fontBlack;
+  @include fontSize(36);
+  font-weight: 800;
+  line-height: 26px;
+  padding-top: 100px;
+  text-align: center;
+}
+.join__lisbon h2 {
+  color: $white;
+}
+h3 {
+  font-family: 'Poppins', sans-serif;
+  color: $grey;
+  @include fontSize(17);
+  font-style: italic;
+  line-height: 26px;
+  text-align: center;
+}
+.decoration::after {
+  display: block;
+  content: "";
+  width: 63px;
+  border-bottom: 1px solid $pink;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+h4 {
+  font-family: 'Raleway', sans-serif;
+  color: $fontBlack;
+  @include fontSize(26);
+  font-weight: 700;
+  line-height: 33px;
+  text-align: left;
+  margin-top: 10px;
+}
+.countdown-timer h4 {
+  font-family: 'Raleway', sans-serif;
+  color: $fontBlack;
+  @include fontSize(26);
+  font-weight: 700;
+  line-height: 33px;
+  text-align: left;
+}
+h5 {
+  font-family: 'Raleway', sans-serif;
+  color: $fontBlack;
+  @include fontSize(16);
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+.countdown-timer p {
+  font-family: 'Poppins', sans-serif;
+  @include fontSize(14);
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+}
+.countdown-timer__timer--time span {
+  color: $white;
+  @include fontSize(20);
+  font-weight: 600;
+  text-align: center;
+}
+.speaker-name {
+  font-family: 'Raleway', sans-serif;
+  color: $fontBlack;
+  @include fontSize(16);
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+.speaker-title {
+  font-family: 'Poppins', sans-serif;
+  color: $grey;
+  @include fontSize(13);
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+.button {
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.button__primary {
+  background-color: $pink;
+}
+.button__secondary {
+  background-color: $purple;
+}
+@media (max-width: 1024px) {
+  header {
+    h1 {
+      @include fontSize(30);
+    }
+    h2 {
+      @include fontSize(15);
+    }
+  }
+  .countdown-timer h4,
+  .countdown-timer .countdown--space {
+    text-align: center;
+  }
 }

@@ -1,0 +1,28 @@
+.event-speakers {
+  .event-speaker__section {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    figure {
+      img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      figcaption {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .speaker-title {
+        padding-bottom: 20px;
+      }
+      .speaker-name {
+        padding-top: 20px;
+      }
+    }
+    figure:hover {
+      background: $purple;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

@@ -5,132 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="styles/styles.scss">
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="https://use.fontawesome.com/e8c540b38d.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,400i|Raleway:600,700,800" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="header">
-      <nav class="text__uppercase">
-        <ul>
-          <li class=""><img src="images/logo.png" alt="Lisbon Logo"></li>
-          <li class="nav__list__list-item"><a href="#" class="nav__list__list-item__link">Home</a></li>
-          <li class="nav__list__list-item"><a href="#" class="nav__list__list-item__link">About Us</a></li>
-          <li class="nav__list__list-item"><a href="#" class="nav__list__list-item__link">Speakers</a></li>
-          <li class="nav__list__list-item"><a href="#" class="nav__list__list-item__link">Pages</a></li>
-          <li class="nav__list__list-item"><a href="#" class="nav__list__list-item__link">Sponsors</a></li>
-          <li class="nav__list__list-item"><a href="#" class="nav__list__list-item__link">Blog</a></li>
-          <li class="nav__list__list-item"><a href="#" class="nav__list__list-item__link">Venue</a></li>
-          <li class="nav__list__list-item"><a href="#" class="nav__list__list-item__link">Contact Us</a></li>
-          <li><i class="fa f.text__uppercasea-search"></i></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header">
-        <a href=""><i class="fa fa-angle-left"></i></a>
-        <img src="images/Icon.png" alt="Microphone Icon">
-        <h2 class="header__title--secondary-title">20 - 22 June, 2018 New York City</h2>
-        <h1 class="header__title--main-title text__uppercase">World Digital Conference 2018 Lead to Your Career</h1>
-        <p class="button__primary"><a href="#">Buy Ticket</a></p>
-        <a href="#"><i class="fa fa-angle-right"></i></a>
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <nav class="text__uppercase header__nav">
+          <div class="header__nav--hidden">
+            <img src="images/logo.png" alt="Lisbon Logo">
+            <i class="fa fa-times"></i>
+          </div>
+          <ul class="nav__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Venue</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="search list-item"><i class="fa fa-search"></i></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header__hero">            
+        <a href="#" class="header__arrow"><i class="fa fa-angle-left"></i></a>
+        <div class="hero__title">
+          <img src="images/Icon.png" alt="Microphone Icon">
+          <h2>20 - 22 June, 2018 New York City</h2>
+          <h1 class="text__uppercase">World Digital Conference</h1>
+          <h1 class="text__uppercase">2018 Lead to Your Career</h1>
+          <a href="#" class="button button__primary text__uppercase">Buy Ticket</a>
+        </div>
+        <a href="#" class="header__arrow"><i class="fa fa-angle-right"></i></a>
+      </div>
     </div>
   </header>
   <main>
-    <section>
-      <div>
-        <p>26-29 August 2017, Berlin</p>
-        <h4>International Conference in 2017</h4>
-      </div>
-      <div>
+    <section class="countdown-timer">
+      <div class="wrapper">
+        <div class="countdown-timer__timer">
+          <div class="countdown-timer__header">
+            <p class="text__uppercase countdown--space">26-29 August 2017, Berlin</p>
+            <h4 class="text__uppercase">International Conference in 2017</h4>
+          </div>
+          <div class="countdown-timer__counter">
+            <div class="countdown-timer__timer--time">
+              <p class="timer--span"><span>1</span><span>4</span><span class="timer--space">8</span>:</p>
+              <p>Days</p>
+            </div>
+            <div class="countdown-timer__timer--time">
+              <p class="timer--span"><span>2</span><span class="timer--space">3</span>:</p>
+              <p>Hours</p>
+            </div>
+            <div class="countdown-timer__timer--time">
+              <p class="timer--span"><span>2</span><span class="timer--space">8</span>:</p>
+              <p>Minutes</p>
+            </div>
+            <div class="countdown-timer__timer--time">
+              <p><span>1</span><span>5</span></p>
+              <p>Seconds</p>
+            </div>
+          </div>
         <div>
-          <ul>
-            <li>1</li>
-            <li>4</li>
-            <li>8</li>
-            <li>:</li>
-            <li>2</li>
-            <li>5</li>
-            <li>:</li>
-            <li>2</li>
-            <li>8</li>
-            <li>:</li>
-            <li>1</li>
-            <li>5</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <l1>Days</l1>
-            <l1>Hours</l1>
-            <l1>Minutes</l1>
-            <l1>Seconds</l1>
-          </ul>
+        <div class="countdown-timer__timer--button">
+          <p class="button button__secondary text__uppercase"><a href="#">Buy Ticket</a></p>
+          <p class="button button__primary text__uppercase"><a href="#">See Details</a></p>
         </div>
       </div>
-      <div>
-        <p class="button button__primary"><a href="#">Buy Ticket</a></p>
-        <p class="button button__secondary"><a href="#">See Details</a></p>
-      </div>
-    </section>
-    <article>
+    </div>
+  </section>
+  <article class="about-event">
+    <div class="wrapper">
       <h2>About This Event</h2>
-      <h3>Starting your own IT business and picking the right niche in less than 30 days.</h3>
-      <div>
-        <img src="images/about-image-1.png" alt="Recoding at a night club with lazers">
-        <h5>Why are we doing this?</h5>
-        <p>It has survived not only five centuries, but also the leap into electronic typesetting..</p>
-        <p><a href="#">Read More</a></p>
+      <h3 class="decoration"><em>Starting your own IT business and picking the right niche in less than 30 days.</em></h3>
+      <div class="about-event__group">
+        <div class="group__individual">
+          <img src="images/about-image-1.png" alt="Recoding at a night club with lazers">
+          <h5 class="text__uppercase">Why are we doing this?</h5>
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting..</p>
+          <a href="#"><em>Read More</em></a>
+        </div>
+        <div class="group__individual">
+          <img src="images/about-image-2.png" alt="Phones in the air at a club, smokey air">
+          <h5 class="text__uppercase">What will you learn?</h5>
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting..</p>
+          <a href="#"><em>Read More</em></a>
+        </div>
+        <div class="group__individual group__individual--last">
+          <img src="images/about-image-3.png" alt="Half a Macbook keyboard, fancy lighting">
+          <h5 class="text__uppercase">What are the benefits?</h5>
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting..</p>
+          <a href="#"><em>Read More</em></a>   
+        </div>
       </div>
-      <div>
-        <img src="images/about-image-2.png" alt="Phones in the air at a club, smokey air">
-        <h5>What will you learn?</h5>
-        <p>It has survived not only five centuries, but also the leap into electronic typesetting..</p>
-        <p><a href="#">Read More</a></p>
-      </div>
-      <div>
-        <img src="images/about-image-3.png" alt="Half a Macbook keyboard, fancy lighting">
-        <h5>What are the benefits?</h5>
-        <p>It has survived not only five centuries, but also the leap into electronic typesetting..</p>
-        <p><a href="#">Read More</a></p>      
-      </div>
-    </article>
-    <section>
+    </div>
+  </article>
+  <section class="join__lisbon">
+    <div class="wrapper">
       <h2>Join Our Event</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquam amet laborum excepturi vel fugit minima maxime architecto error explicabo veritatis sit magnam consequatur dolor corporis iure, id nisi laboriosam?</p>
       <form action="#.php" method="POST" name="email signup">
-        <label for="emailSignup">Subscribe</label>
-        <input type="email" name="" id="emailSignup" placeholder="Your Email...">
+        <label for="emailSignup" type="hidden">Subscribe</label>
+        <input type="emailSignup" name="" placeholder="Your Email...">
+        <button type="emailSignup" id="emailSignup" class="button button__primary text__uppercase">Subscribe</button>
       </form>
-    </section>
-    <section>
+    </div>
+  </section>
+  <section class="event-speakers">
+    <div class="wrapper">
       <h2>Our Event Speakers</h2>
-      <h3>Starting your own IT company and picking the right niche in less than 30 days</h3>
-      <figure>
-        <img src="images/speaker-1.png" alt="A hipster girl, Harry Potter glasses">
-        <figcaption>Ashley Warner</figcaption>
-        <figcaption>CEO, Hatem Co.</figcaption>
-      </figure>
-      <div>
-        <img src="images/speaker-2.png" alt="A middle age man staring off into space.">
-        <figcaption>Seth Rollins </figcaption>
-        <figcaption>GM, The boxtrap</figcaption>
-      </figure>
-      <figure>
-        <img src="images/speaker-3.png" alt="A girl looking seriously at you.">
-        <figcaption>Darcy Owens</figcaption>
-        <figcaption>Producer, CSI: Cyber</figcaption>
-      </figure>
-      <figure>
-        <img src="images/speaker-4.png" alt="A guy sitting on a stool, with dreads, cool.">
-        <figcaption>Adam Rose</figcaption>
-        <figcaption>COO, Bittorent</figcaption>
-      </figure>
-    </section>
+      <h3 class="decoration">Starting your own IT company and picking the right niche in less than 30 days</h3>
+      <div class="event-speaker__section">
+        <figure>
+          <img src="images/speaker-1.png" alt="A hipster girl, Harry Potter glasses">
+          <figcaption class="speaker-name">Ashley Warner</figcaption>
+          <figcaption class="speaker-title">CEO, Hatem Co.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/speaker-2.png" alt="A middle age man staring off into space.">
+          <figcaption class="speaker-name">Seth Rollins </figcaption>
+          <figcaption class="speaker-title">GM, The boxtrap</figcaption>
+        </figure>
+        <figure>
+          <img src="images/speaker-3.png" alt="A girl looking seriously at you.">
+          <figcaption class="speaker-name">Darcy Owens</figcaption>
+          <figcaption class="speaker-title">Producer, CSI: Cyber</figcaption>
+        </figure>
+        <figure>
+          <img src="images/speaker-4.png" alt="A guy sitting on a stool, with dreads, cool.">
+          <figcaption class="speaker-name">Adam Rose</figcaption>
+          <figcaption class="speaker-title">COO, Bittorent</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
     <section>
       <h2>Our Pricing</h2>
-      <h3>Starting your own IT business and picking the right niche in less than 30 days</h3>
+      <h3 class="decoration">Starting your own IT business and picking the right niche in less than 30 days</h3>
       <div>
         <div>
           <h5>Basic Plan</h5>
@@ -142,7 +158,7 @@
             <li>Free Coffee & Lunch</li>
             <li>Free Entrance Material</li>
           </ul>
-          <p><a href="#" class="button__secondary">See Details</a></p>
+          <a href="#" class="button__secondary">See Details</a>
         </div>
         <div>
           <h5>Optimal Plan</h5>
@@ -154,7 +170,7 @@
             <li>Free Coffee & Lunch</li>
             <li>Free Entrance Material</li>
           </ul>
-          <p><a href="#" class="button__secondary">See Details</a></p>
+          <a href="#" class="button__secondary">See Details</a>
         </div>
         <div>
           <h5>Premium Plan</h5>
@@ -166,7 +182,7 @@
             <li>Free Coffee & Lunch</li>
             <li>Free Entrance Material</li>
           </ul>
-          <p><a href="#" class="button__secondary">See Details</a></p>
+          <a href="#" class="button__secondary">See Details</a>
         </div>
       </div>
     </section>
@@ -223,25 +239,25 @@
         <h6>River stumble as lights</h6>
         <p>By David Warner on 25 April 2017</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p><a href="#">Read More</a></p>
+        <a href="#">Read More</a>
       </div>
       <div>
         <h6>The Standard Chunk of Fun</h6>
         <p>By David Warner on 17 April 2017</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p><a href="#">Read More</a></p>
+        <a href="#">Read More</a>
       </div>
       <div>
         <i class="fa fa-link"></i>
         <p>http://www.facebook.com</p>
-        <p><a href="#">Read More</a></p>
+        <a href="#">Read More</a>
       </div>
       <aside>
         <img src="images/news-2.png" alt="A guy looking at a wall">
         <h6>How to Build Your Event</h6>
         <p>By David Warner on 27 April 2017</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p><a href="#">Read More</a></p> 
+        <a href="#">Read More</a> 
       </aside>
     </article>
     <section>
@@ -281,7 +297,7 @@
               <li class="footer__nav__list__list-item"><a href="#" class="nav__list__list-item__link">Sponsors</a></li>
               <li class="footer__nav__list__list-item"><a href="#" class="nav__list__list-item__link">Venues</a></li>
             </ul>
-      </nav>
+        </nav>
       <p>Copyright &copy; <span>Lisbon</span> 2017</p>
     </div>
   </footer>

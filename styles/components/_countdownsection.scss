@@ -1,0 +1,108 @@
+.countdown-timer {
+  background: $backgroundTimer;
+  min-height: 260px;
+  p {
+    margin: 0;
+  }
+  .countdown-timer__timer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    min-height: 260px;
+  }
+  .countdown-timer__header {
+    max-width: 25%;
+  }
+  .countdown-timer__counter {
+    display: flex;
+    .countdown-timer__timer--time {
+      text-align: center;
+      span {
+        background: #333333;
+        width: 37px;
+        height: 45px;
+        line-height: 4rem;
+        display: inline-block;
+        margin-right: 4px;
+        border-radius: 3px;
+      }
+      .timer--space {
+        margin-right: 5px;
+      }
+      .timer--span {
+        color: $fontBlack;
+      }
+    }
+  }
+  .countdown-timer__timer--button {
+    display: flex;
+    flex-wrap: wrap;
+    p:first-of-type {
+      margin-right: 5px;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .countdown-timer {
+    
+    .countdown--space {
+      padding-top: 20px;
+    }
+    .countdown-timer__timer--button {
+      display: flex;
+      // padding-bottom: 20px;
+      p:first-of-type {
+        margin-right: 0px;
+      }
+      .button {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .countdown-timer {
+    .countdown-timer__timer {
+      display: block;
+      .countdown-timer__header {
+        max-width: 100%;
+      }
+      .countdown-timer__counter {
+        display: flex;
+        justify-content: center;
+      }
+      .countdown-timer__timer--time {
+        display: inline-block;
+        text-align: center;
+        .timer--space {
+          margin-right: 20px;
+        }
+      }
+    }
+    .countdown-timer__timer--button {
+      display: flex;
+      justify-content: center;
+      .button {
+        margin-top: 20px;
+      }
+      p:first-of-type {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+@media(max-width: 480px) {
+  .countdown-timer {
+    .countdown-timer__counter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p:first-of-type {
+        margin: 0;
+      }
+    }
+  }
+}

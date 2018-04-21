@@ -3,3 +3,30 @@
 @import "typography";
 @import "components/header";
 @import "components/footer";
+@import "components/_countdownsection.scss";
+@import "components/aboutevent.scss";
+@import "components/_joinlisbon.scss";
+@import "components/_eventspeakers.scss";
+
+body {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  @include fontSize(16);
+  margin: 0 auto;
+}
+.wrapper {
+  max-width: 61%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    max-width: 90%;
+  }
+}
+
+@media(max-width: 480px) {
+  .wrapper {
+    max-width: 100%;
+  }
+}
