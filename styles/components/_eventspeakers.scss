@@ -4,6 +4,9 @@
     justify-content: space-between;
     flex-flow: row wrap;
     figure {
+      box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+      margin-top: 30px;
+      position: relative;
       img {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -18,11 +21,66 @@
       .speaker-name {
         padding-top: 20px;
       }
+      .speaker__hover {
+        display: none;
+        i {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          background:  rgba(0, 0, 0, 0.55);
+          position: absolute;
+          bottom: 100px;
+          left: 80px;
+          z-index: 100;
+        } 
+        .fa-twitter {
+          left: 120px;
+          padding-left: 9px;
+          padding-top: 9px;
+        }
+        .fa-facebook-f {
+          left: 160px;
+          padding-left: 12px;
+          padding-top: 9px;
+        }
+        .fa-google-plus-g {
+          padding-left: 9px;
+          padding-top: 9px;
+        }
+      }
+      .fa-facebook-f:hover,
+      .fa-twitter:hover,
+      .fa-google-plus-g:hover {
+        background: $pink;
+      }
+      .speaker-image:hover .speaker__hover {
+        display: block;
+      }
     }
     figure:hover {
       background: $purple;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
+      border-radius: 5px;
     }
   }
 }
+@media (max-width: 1400px) {
+  .event-speakers {
+    figure {
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .event-speakers {
+    border: 1px solid;
+    .event-speaker__section figure {
+    .speaker__hover {
+      display: block;
+      i {
+        display: block;
+      }
+    }
+  }
+  }
+}
+

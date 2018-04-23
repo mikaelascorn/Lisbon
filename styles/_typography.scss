@@ -1,9 +1,3 @@
-    // font-family: 'Poppins', sans-serif;
-
-    // font-family: 'Raleway', sans-serif;
-
-    // font-family: 'Open Sans', sans-serif;
-
 html {
   font-size: 62.5%;
 }
@@ -53,11 +47,13 @@ h2 {
   color: $fontBlack;
   @include fontSize(36);
   font-weight: 800;
-  line-height: 26px;
   padding-top: 100px;
   text-align: center;
 }
-.join__lisbon h2 {
+.join__lisbon h2,
+.join__lisbon p,
+.pricing h2,
+.pricing h3 {
   color: $white;
 }
 h3 {
@@ -101,12 +97,64 @@ h5 {
   line-height: 26px;
   text-align: left;
 }
-.countdown-timer p {
+.pricing h5 {
+  @include fontSize(20);
+  font-weight: 500;
+  text-align: center;
+}
+h6 {
+  font-family: 'Raleway', sans-serif;
+  color: $fontBlack;
+  @include fontSize(22);
+  font-weight: 600px;
+  line-height: 26px;
+  text-align: left;
+
+}
+.countdown-timer p,
+.pricing p {
   font-family: 'Poppins', sans-serif;
   @include fontSize(14);
   font-weight: 500;
   line-height: 26px;
+}
+.countdown-timer p {
   text-align: left;
+}
+.pricing p {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: $grey;
+  @include fontSize(14);
+  font-weight: 300;
+  line-height: 26px;
+}
+.pricing-after::after {
+  width: 30px;
+  content: "";
+  border-bottom: 1px solid $fontBlack;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 10px;
+}
+.pricing strong {
+  font-family: 'Poppins', sans-serif;
+  color: $fontBlack;
+  @include fontSize(36);
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.pricing ul {
+  font-family: 'Open Sans', sans-serif;
+  color: $grey;  
+  @include fontSize(15);
+  font-weight: 400;
+  line-height: 38px;
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
 }
 .countdown-timer__timer--time span {
   color: $white;
@@ -130,15 +178,74 @@ h5 {
   line-height: 22px;
   text-align: center;
 }
+.schedule-aside strong {
+  font-family: 'Poppins', sans-serif;
+  color: $fontBlack;
+  @include fontSize(18);
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+}
+.schedule--image strong {
+  font-family: 'Poppins', sans-serif;
+  color: $lightgrey;
+  @include fontSize(13);
+  font-weight: 400;
+  line-height: 24px;
+}
+.schedule-title {
+  font-family: 'Raleway', sans-serif;
+  color: $fontBlack;
+  @include fontSize(14);
+  font-weight: 500;
+  line-height: 28px;
+}
+.schedule-title span {
+  color: $grey;
+  padding-left: 20px;
+}
+.schedule-people strong {
+  font-family: 'Raleway', sans-serif;
+  color: $fontBlack;
+  @include fontSize(18);
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
 .button {
   padding: 10px 40px;
   border-radius: 5px;
+  color: $white;
 }
 .button__primary {
   background-color: $pink;
 }
 .button__secondary {
   background-color: $purple;
+}
+.button:hover {
+  color: $fontBlack;
+}
+blockquote {
+  color: #bfb9f6;
+  @include fontSize(17);
+  line-height: 28px;
+  font-family: 'Poppins', sans-serif;
+  strong {
+    font-family: 'Raleway', sans-serif;
+    @include fontSize(30);
+    color: $backgroundTimer;
+    font-weight: 700;
+    line-height: 46px;
+    font-style: normal;
+  }
+}
+.news-container-decoration::before {
+  content: "";
+  display: block;
+  width: 63px;
+  border: 1px solid  #e0e0e0;
+  margin-bottom: 25px;
 }
 @media (max-width: 1024px) {
   header {

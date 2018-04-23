@@ -1,0 +1,68 @@
+.schedule {
+  background: $backgroundTimer;
+  .schedule-event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 110px;
+    flex-flow: row wrap;
+    .schedule-aside {
+      border: 1px solid $backgroundLight;
+      box-sizing: border-box;
+      background-color: $white;
+      width: 281px;
+      height: 88px;
+      transition: all 0.5s;
+      p {
+        margin-left: 40px;
+        line-height: 0px;
+      }
+      .schedule--p {
+        margin-top: 30px;
+      }
+    }
+    .schedule-aside:hover {
+      background-color: $pink;
+      p, strong {
+        color: $white;
+      }
+    }
+    .schedule-people {
+      max-width: 800px;
+      .schedule--image {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        .schedule__section {
+          padding-left: 35px;
+          p {
+            margin: 0px;
+          }
+        }
+        img {
+          border-radius: 50%;
+          border: 1px solid $backgroundLight;
+          border-radius: 50%;
+          border-width: 7px;
+          background-color: #7e7a7a;
+          float: left;
+          width: 82px;
+          height: 82px;
+        }
+      }
+      .schedule--image::before {
+          content: "";
+          width: 31px;
+          border: 1px dashed $backgroundLight;
+          margin-right: 15px;
+        }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .schedule {
+    .schedule-event {
+      justify-content: center;
+    }
+  }
+}

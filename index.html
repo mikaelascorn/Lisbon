@@ -9,6 +9,26 @@
   <script src="https://use.fontawesome.com/e8c540b38d.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,400i|Raleway:600,700,800" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header>
@@ -28,7 +48,7 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Venue</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li class="search list-item"><i class="fa fa-search"></i></li>
+            <li class="search list-item"><a href="#"><i class="fa fa-search"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -111,7 +131,7 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquam amet laborum excepturi vel fugit minima maxime architecto error explicabo veritatis sit magnam consequatur dolor corporis iure, id nisi laboriosam?</p>
       <form action="#.php" method="POST" name="email signup">
         <label for="emailSignup" type="hidden">Subscribe</label>
-        <input type="emailSignup" name="" placeholder="Your Email...">
+        <input type="emailSignup" id="emailSignup" name="" placeholder="Your Email...">
         <button type="emailSignup" id="emailSignup" class="button button__primary text__uppercase">Subscribe</button>
       </form>
     </div>
@@ -122,35 +142,64 @@
       <h3 class="decoration">Starting your own IT company and picking the right niche in less than 30 days</h3>
       <div class="event-speaker__section">
         <figure>
-          <img src="images/speaker-1.png" alt="A hipster girl, Harry Potter glasses">
-          <figcaption class="speaker-name">Ashley Warner</figcaption>
-          <figcaption class="speaker-title">CEO, Hatem Co.</figcaption>
+          <div class="speaker-image">
+            <img src="images/speaker-1.png" alt="A hipster girl, Harry Potter glasses">
+            <div class="speaker__hover">
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <figcaption class="speaker-name">Ashley Warner</figcaption>
+            <figcaption class="speaker-title">CEO, Hatem Co.</figcaption>
+          </div>
         </figure>
         <figure>
-          <img src="images/speaker-2.png" alt="A middle age man staring off into space.">
-          <figcaption class="speaker-name">Seth Rollins </figcaption>
-          <figcaption class="speaker-title">GM, The boxtrap</figcaption>
+          <div class="speaker-image">
+            <img src="images/speaker-2.png" alt="A middle age man staring off into space.">
+            <div class="speaker__hover">
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <figcaption class="speaker-name">Seth Rollins </figcaption>
+            <figcaption class="speaker-title">GM, The boxtrap</figcaption>
+          </div>
         </figure>
         <figure>
-          <img src="images/speaker-3.png" alt="A girl looking seriously at you.">
-          <figcaption class="speaker-name">Darcy Owens</figcaption>
-          <figcaption class="speaker-title">Producer, CSI: Cyber</figcaption>
+          <div class="speaker-image">
+            <img src="images/speaker-3.png" alt="A girl looking seriously at you.">
+            <div class="speaker__hover">
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <figcaption class="speaker-name">Darcy Owens</figcaption>
+            <figcaption class="speaker-title">Producer, CSI: Cyber</figcaption>
+          </div>
         </figure>
         <figure>
-          <img src="images/speaker-4.png" alt="A guy sitting on a stool, with dreads, cool.">
-          <figcaption class="speaker-name">Adam Rose</figcaption>
-          <figcaption class="speaker-title">COO, Bittorent</figcaption>
+          <div class="speaker-image">
+            <img src="images/speaker-4.png" alt="A guy sitting on a stool, with dreads.">
+            <div class="speaker__hover">
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <figcaption class="speaker-name">Adam Rose</figcaption>
+            <figcaption class="speaker-title">COO, Bittorent</figcaption>
+          </div>
         </figure>
       </div>
     </div>
   </section>
-    <section>
+  <section class="pricing">
+    <div class="wrapper">
       <h2>Our Pricing</h2>
       <h3 class="decoration">Starting your own IT business and picking the right niche in less than 30 days</h3>
-      <div>
-        <div>
+      <div class="pricing__container">
+        <div class="pricing__individual">
           <h5>Basic Plan</h5>
-          <p>Standard Pricing Plan</p>
+          <p class="pricing-after">Standard Pricing Plan</p>
           <p><strong>$35</strong> / monthly</p>
           <ul>
             <li>Client Support 3 Event</li>
@@ -158,11 +207,13 @@
             <li>Free Coffee & Lunch</li>
             <li>Free Entrance Material</li>
           </ul>
-          <a href="#" class="button__secondary">See Details</a>
+          <div class="pricing-tag">
+            <a href="#" class="button button__primary text__uppercase">See Details</a>
+          </div>
         </div>
-        <div>
+        <div class="pricing__individual pricing__best">
           <h5>Optimal Plan</h5>
-          <p>Standard Pricing Plan</p>
+          <p class="pricing-after">Standard Pricing Plan</p>
           <p><strong>$60</strong> / monthly</p>
           <ul>
             <li>Client Support 3 Event</li>
@@ -170,11 +221,16 @@
             <li>Free Coffee & Lunch</li>
             <li>Free Entrance Material</li>
           </ul>
-          <a href="#" class="button__secondary">See Details</a>
+          <div class="pricing-tag">
+            <a href="#" class="button button__primary text__uppercase">See Details</a>
+          </div>
+          <!-- <div class="pricing__best--offer">
+            <p>Best Choice</p>
+          </div> -->
         </div>
-        <div>
+        <div class="pricing__individual pricing__premium">
           <h5>Premium Plan</h5>
-          <p>Premium Plan </p>
+          <p class="pricing-after">Premium Plan </p>
           <p><strong>$90</strong> / monthly</p>
           <ul>
             <li>Client Support 3 Event</li>
@@ -182,123 +238,174 @@
             <li>Free Coffee & Lunch</li>
             <li>Free Entrance Material</li>
           </ul>
-          <a href="#" class="button__secondary">See Details</a>
+          <div class="pricing-tag">
+            <a href="#" class="button button__primary text__uppercase">See Details</a>
+          </div>
         </div>
       </div>
-    </section>
-    <section>
+    </div>
+  </section>
+  <section class="schedule">
+    <div class="wrapper">
       <h2>Event Schedule</h2>
-      <h3>Starting your own IT business and picking the right niche in less than 30 days</h3>
-      <aside>
+      <h3 class="decoration">Starting your own IT business and picking the right niche in less than 30 days</h3>
+      <div class="schedule-event">
         <div>
-          <p>April 21</p>
-          <p><strong>First Day</strong></p>
+          <div class="schedule-aside">
+            <p class="schedule--p">April 21</p>
+            <p><strong>First Day</strong></p>
+          </div>
+          <div class="schedule-aside">
+            <p class="schedule--p">April 22</p>
+            <p><strong>Second Day</strong></p>
+          </div>
+          <div class="schedule-aside">
+            <p class="schedule--p">April 24</p>
+            <p><strong>Third Day</strong></p>
+          </div>
+          <div class="schedule-aside">
+            <p class="schedule--p">April 25</p>
+            <p><strong>Fourth Day</strong></p>
+          </div>
         </div>
-        <div>
-          <p>April 22</p>
-          <p><strong>Second Day</strong></p>
+        <div class="schedule-people">
+          <div class="schedule--image">
+            <img src="images/quote-1.png" alt="A hipster girl, Harry Potter glasses">
+            <div class="schedule__section">
+              <p class="schedule-title">Ashley Warner <span>10am - 12pm</span></<p>
+              <p><strong>Interfaces Holisticly predominate extensible testing procedures</strong></p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ad sed neque dolor est ex! Ipsa repellat quia voluptates quos laborum eius numquam beatae tempora! Quaerat, eveniet facilis. Debitis, fugiat.</p>
+            </div>
+          </div>
+          <div class="schedule--image">
+            <img src="images/quote-2.png" alt="A middle age man staring off into space.">
+            <div class="schedule__section">
+              <p class="schedule-title">Seth Rollins <span>11am - 2:30pm</span></p>
+              <p><strong>Welcome Speech of UX Conf 2018</strong></p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ad sed neque dolor est ex! Ipsa repellat quia voluptates quos laborum eius numquam beatae tempora! Quaerat, eveniet facilis. Debitis, fugiat.</p>
+            </div>
+          </div>
+          <div class="schedule--image">
+            <img src="images/quote-3.png" alt="A girl looking seriously at you.">
+            <div class="schedule__section">
+              <p class="schedule-title">Darcy Owens <span>10am - 2:00pm</span></p>
+              <p><strong>Open your business around the world</strong></p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ad sed neque dolor est ex! Ipsa repellat quia voluptates quos laborum eius numquam beatae tempora! Quaerat, eveniet facilis. Debitis, fugiat.</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p>April 24</p>
-          <p><strong>Third Day</strong></p>
-        </div>
-        <div>
-          <p>April 25</p>
-          <p><strong>Fourth Day</strong></p>
-        </div>
-      </aside>
-      <figure>
-        <img src="images/quote-1.png" alt="A hipster girl, Harry Potter glasses">
-        <figcaption>Ashley Warner <span>10am - 12pm</span></figcaption>
-        <figcaption><strong>Interfaces Holisticly predominate extensible testing procedures</strong></figcaption>
-        <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ad sed neque dolor est ex! Ipsa repellat quia voluptates quos laborum eius numquam beatae tempora! Quaerat, eveniet facilis. Debitis, fugiat.</figcaption>
-      </figure>
-      <figure>
-        <img src="images/quote-2.png" alt="A middle age man staring off into space.">
-        <figcaption>Seth Rollins <span>11am - 2:30pm</span></figcaption>
-        <figcaption><strong>Welcome Speech of UX Conf 2018</strong></figcaption>
-        <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ad sed neque dolor est ex! Ipsa repellat quia voluptates quos laborum eius numquam beatae tempora! Quaerat, eveniet facilis. Debitis, fugiat.</figcaption>
-      </figure>
-      <figure>
-        <img src="images/quote-3.png" alt="A girl looking seriously at you.">
-        <figcaption>Darcy Owens <span>10am - 2:00pm</span></figcaption>
-        <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ad sed neque dolor est ex! Ipsa repellat quia voluptates quos laborum eius numquam beatae tempora! Quaerat, eveniet facilis. Debitis, fugiat.</figcaption>
-      </figure>
+      </div>
     </section>
-    <section>
-      <figure>
-        <img src="" alt="">
-      </figure>
-      <blockquote><strong>&ldquo; In case you needed something fun and pointless</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi fuga eaque veniam nam, voluptates non voluptatem eum fugit? Ad nam tempora deleniti velit incidunt praesentium suscipit expedita unde possimus porro? <br><strong>David Warner -</strong> Artist</blockquote>
+    <section class="quote">
+      <div class="wrapper">
+        <figure>
+          <img src="../../images/schedule-1.png" alt="A hipster girl, Harry Potter glasses">
+          <img src="../../images/schedule-2.png" alt="A middle age man staring off into space.">
+          <img src="../../images/schedule-3.png" alt="A girl looking seriously at you.">
+          <img src="images/schedule-4.png" alt="A guy sitting on a stool, with dreads.">
+        </figure>
+        <div class="quote-quotes">&ldquo;</div>
+        <blockquote><strong>In case you needed something fun and pointless</strong><em><br class="break">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi fuga eaque veniam nam, voluptates non voluptatem eum fugit? Ad nam tempora deleniti velit incidunt praesentium suscipit expedita unde possimus porro? <br><strong class="break">David Warner -</strong> Artist</em></blockquote>
+      </div>
     </section>
-    <article>
-      <h2>Latest News</h2>
-      <h3>Starting your own IT business and picking the right niche in less than 30 days</h3>
-      <div>
-        <img src="images/news-1.png" alt="A group of people in a room">
-        <h6>River stumble as lights</h6>
-        <p>By David Warner on 25 April 2017</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <a href="#">Read More</a>
+    <article class="news-container">
+      <div class="wrapper clearfix">
+        <h2>Latest News</h2>
+        <h3 class="decoration">Starting your own IT business and picking the right niche in less than 30 days</h3>
+        <div class="news-container__grid">
+          <div class="news-container--individual grid-gap clearfix">
+            <img src="images/news-1.png" alt="A group of people in a room">
+            <div class="news-container__space">
+              <div class="special-grid">
+                <h6>River stumble as lights</h6>
+                <p>By David Warner on 25 April 2017</p>
+                <p class="news-container-decoration">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="#" class="button button__primary text__uppercase">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="news-container--individual">
+            <h6>The Standard Chunk of Fun</h6>
+            <p>By David Warner on 17 April 2017</p>
+            <p class="news-container-decoration">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="button button__primary text__uppercase">Read More</a>
+          </div>
+          <div class="news-container--individual news-container-social">
+            <i class="fas fa-link"></i>
+            <a class="social-link" href="https://www.facebook.com">http://www.facebook.com</a>
+            <a class="button button__primary text__uppercase">Read More</a>
+          </div>
+        </div>
+        <aside class="news-container--aside">
+          <div class="grid-gap2">
+            <img src="images/news-2.png" alt="A guy looking at a wall">
+            <h6>How to Build Your Event</h6>
+            <p>By David Warner on 27 April 2017</p>
+            <p class="news-container-decoration">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="button button__primary text__uppercase">Read More</a>
+          </div>
+        </aside>
       </div>
-      <div>
-        <h6>The Standard Chunk of Fun</h6>
-        <p>By David Warner on 17 April 2017</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div>
-        <i class="fa fa-link"></i>
-        <p>http://www.facebook.com</p>
-        <a href="#">Read More</a>
-      </div>
-      <aside>
-        <img src="images/news-2.png" alt="A guy looking at a wall">
-        <h6>How to Build Your Event</h6>
-        <p>By David Warner on 27 April 2017</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <a href="#">Read More</a> 
-      </aside>
     </article>
-    <section>
+    <section class="newsletter-signup">
       <h2>Sign Up For Our Newsletter</h2>
       <form action="#.php" method="POST" name="email signup">
-        <label for="emailSignup">Subscribe</label>
-        <input type="email" name="" id="emailSignup" placeholder="Your Email Address...">
+        <label for="emailSignup" type="hidden">Subscribe</label>
+        <input type="email" name="" id="emailSignup" placeholder="Your Email Address..." required>
+        <button type="emailSignup" id="emailSignup" class="button button__primary text__uppercase">Subscribe</button>
       </form>
     </section>
   </main>
   <footer>
-    <div>
-      <div>
-        <i class="fa fa-map-marker-alt"></i>
-        <p>184 Collins Street West Victoria</p>
-        <p>United States, 8007</p>
+    <div class="top-footer">
+      <div class="wrapper">
+        <div class="footer-contact">
+          <div class="footer-favicon">
+            <i class="fa fa-map-marker-alt"></i>
+          </div>
+          <div class="footer-content footer-detail">
+            <p>184 Collins Street West Victoria</p>
+            <p>United States, 8007</p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <div class="footer-favicon">
+            <i class="fa fa-mobile-alt"></i>
+          </div>
+          <div class="footer-content footer-detail">         
+            <p>(800) 123 4567</p>
+            <p>(800) 123 4567</p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <div class="footer-favicon">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="footer-content">
+            <p>info@lisbon.com</p>
+            <p>support@lisbon.com</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <i class="fa fa-mobile-alt"></i>
-        <p>(800) 123 4567</p>
-        <p>(800) 123 4567</p>
-      </div>
-      <div>
-        <i class="far fa-envelope"></i>
-        <p>info@lisbon.com</p>
-        <p>support@lisbon.com</p>
+      <div class="footer-fav">
+        <i class="fa fa-angle-up"></i>
       </div>
     </div>
-    <div>
-      <img src="images/logo.png" alt="Lisbon Logo">
-        <nav class="footer__nav">
-          <ul class="footer__nav__list">
-              <li class="footer__nav__list__list-item"><a href="#" class="nav__list__list-item__link">Home</a></li>
-              <li class="footer__nav__list__list-item"><a href="#" class="nav__list__list-item__link">Speakers</a></li>
-              <li class="footer__nav__list__list-item"><a href="#" class="nav__list__list-item__link">Schedule</a></li>
-              <li class="footer__nav__list__list-item"><a href="#" class="nav__list__list-item__link">Gallery</a></li>
-              <li class="footer__nav__list__list-item"><a href="#" class="nav__list__list-item__link">Sponsors</a></li>
-              <li class="footer__nav__list__list-item"><a href="#" class="nav__list__list-item__link">Venues</a></li>
+    <div class="lower-footer">
+      <div class="wrapper">
+        <img src="images/logo.png" alt="Lisbon Logo">
+          <nav class="footer__nav">
+            <ul>
+              <li class="footer__item text__uppercase"><a href="#">Home</a></li>
+              <li class="footer__item text__uppercase"><a href="#">Speakers</a></li>
+              <li class="footer__item text__uppercase"><a href="#">Schedule</a></li>
+              <li class="footer__item text__uppercase"><a href="#">Gallery</a></li>
+              <li class="footer__item text__uppercase"><a href="#">Sponsors</a></li>
+              <li class="footer__item text__uppercase"><a href="#">Venues</a></li>
             </ul>
-        </nav>
-      <p>Copyright &copy; <span>Lisbon</span> 2017</p>
+          </nav>
+        <p>Copyright &copy; <span>Lisbon</span> 2017</p>
+      </div>
     </div>
   </footer>
 </body>

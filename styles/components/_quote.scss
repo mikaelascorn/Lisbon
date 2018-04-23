@@ -1,0 +1,60 @@
+.quote {
+  background-color: $purple;
+  min-height: 600px;
+  .wrapper {
+    display: flex;
+    min-height: 600px;
+    align-items: center;
+    justify-content: flex-start;
+  figure {
+    display: flex;
+    flex-flow: column wrap;
+    img {
+      border-radius: 50%;
+      border: 1px solid transparent;
+      background-color: transparent;
+      border-width: 6px;
+      margin: 5px;
+    }
+    img:hover {
+      border: 1px solid #ececec;
+      background-color: #a1a1a1;
+      border-width: 6px;
+      }
+    }
+    blockquote {
+      max-width: 450px;
+      .break {
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+    }
+    .quote-quotes {
+      color: $backgroundTimer;
+      @include fontSize(110);
+      font-weight: 400;
+      font-family: 'Raleway', sans-serif;
+      display: flex;
+      padding-left: 20px;
+      margin-top: -175px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .quote .wrapper {
+    display: block;
+    figure {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 20px 0px;
+    }
+    .quote-quotes {
+      margin-top: 0px;
+      display: block;
+      padding: 0px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
