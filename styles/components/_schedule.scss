@@ -33,6 +33,7 @@
         display: flex;
         align-items: center;
         margin-top: 50px;
+        flex-wrap: row wrap;
         .schedule__section {
           padding-left: 35px;
           p {
@@ -63,6 +64,25 @@
   .schedule {
     .schedule-event {
       justify-content: center;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .schedule {
+    .schedule-event {
+      padding-bottom: 50px;
+      .schedule-people .schedule--image {
+        margin-top: 20px;
+        display: block;
+        img {
+          float: none;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .schedule__section {
+      display: block;
     }
   }
 }

@@ -1,5 +1,5 @@
 .join__lisbon {
-  background-image: url(../../images/pattern-1.png);
+  background-image: url(../images/pattern-1.png);
   text-align: center;
   p {
     max-width: 900px;
@@ -8,6 +8,9 @@
   form {
     padding-bottom: 100px;
     padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
     label {
       display: none;
     }
@@ -22,17 +25,20 @@
       padding: 10px 40px;
       margin-right: 0px;
       color: $white;
+      display: block;
     }
     .button {
       border-top-left-radius: 0px; 
       border-bottom-left-radius: 0px; 
       border: 1px solid $pink;
+      display: block;
     }
   }
 } 
 
 @media(max-width: 480px) {
   .join__lisbon form {
+    padding-bottom: 30px;
     input {
       border-radius: 5px;
       border: 1px solid $white;

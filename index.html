@@ -33,21 +33,22 @@
 <body>
   <header>
     <div class="wrapper">
-      <div class="header__wrapper">
+      <div class="header__wrapper" id="home">
         <nav class="text__uppercase header__nav">
-          <div class="header__nav--hidden">
-            <img src="images/logo.png" alt="Lisbon Logo">
+          <input type="checkbox" id="open" name="open">
+          <label for="open" id="open">
             <i class="fa fa-times"></i>
-          </div>
+          </label>
+          <img src="images/logo.png" alt="Lisbon Logo">
           <ul class="nav__list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Speakers</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Venue</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#pages">Pages</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#contact">Contact Us</a></li>
             <li class="search list-item"><a href="#"><i class="fa fa-search"></i></a></li>
           </ul>
         </nav>
@@ -99,7 +100,7 @@
       </div>
     </div>
   </section>
-  <article class="about-event">
+  <article class="about-event" id="about">
     <div class="wrapper">
       <h2>About This Event</h2>
       <h3 class="decoration"><em>Starting your own IT business and picking the right niche in less than 30 days.</em></h3>
@@ -136,7 +137,7 @@
       </form>
     </div>
   </section>
-  <section class="event-speakers">
+  <section class="event-speakers" id="speakers">
     <div class="wrapper">
       <h2>Our Event Speakers</h2>
       <h3 class="decoration">Starting your own IT company and picking the right niche in less than 30 days</h3>
@@ -192,7 +193,7 @@
       </div>
     </div>
   </section>
-  <section class="pricing">
+  <section class="pricing" id="sponsors">
     <div class="wrapper">
       <h2>Our Pricing</h2>
       <h3 class="decoration">Starting your own IT business and picking the right niche in less than 30 days</h3>
@@ -269,7 +270,7 @@
           </div>
         </div>
         <div class="schedule-people">
-          <div class="schedule--image">
+          <div class="schedule--image clearfix">
             <img src="images/quote-1.png" alt="A hipster girl, Harry Potter glasses">
             <div class="schedule__section">
               <p class="schedule-title">Ashley Warner <span>10am - 12pm</span></<p>
@@ -277,7 +278,7 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ad sed neque dolor est ex! Ipsa repellat quia voluptates quos laborum eius numquam beatae tempora! Quaerat, eveniet facilis. Debitis, fugiat.</p>
             </div>
           </div>
-          <div class="schedule--image">
+          <div class="schedule--image clearfix">
             <img src="images/quote-2.png" alt="A middle age man staring off into space.">
             <div class="schedule__section">
               <p class="schedule-title">Seth Rollins <span>11am - 2:30pm</span></p>
@@ -285,7 +286,7 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ad sed neque dolor est ex! Ipsa repellat quia voluptates quos laborum eius numquam beatae tempora! Quaerat, eveniet facilis. Debitis, fugiat.</p>
             </div>
           </div>
-          <div class="schedule--image">
+          <div class="schedule--image clearfix">
             <img src="images/quote-3.png" alt="A girl looking seriously at you.">
             <div class="schedule__section">
               <p class="schedule-title">Darcy Owens <span>10am - 2:00pm</span></p>
@@ -297,18 +298,18 @@
       </div>
     </section>
     <section class="quote">
-      <div class="wrapper">
+      <div class="wrapper clearfix">
         <figure>
-          <img src="../../images/schedule-1.png" alt="A hipster girl, Harry Potter glasses">
-          <img src="../../images/schedule-2.png" alt="A middle age man staring off into space.">
-          <img src="../../images/schedule-3.png" alt="A girl looking seriously at you.">
+          <img src="images/schedule-1.png" alt="A hipster girl, Harry Potter glasses">
+          <img src="images/schedule-2.png" alt="A middle age man staring off into space.">
+          <img src="images/schedule-3.png" alt="A girl looking seriously at you.">
           <img src="images/schedule-4.png" alt="A guy sitting on a stool, with dreads.">
         </figure>
         <div class="quote-quotes">&ldquo;</div>
         <blockquote><strong>In case you needed something fun and pointless</strong><em><br class="break">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi fuga eaque veniam nam, voluptates non voluptatem eum fugit? Ad nam tempora deleniti velit incidunt praesentium suscipit expedita unde possimus porro? <br><strong class="break">David Warner -</strong> Artist</em></blockquote>
       </div>
     </section>
-    <article class="news-container">
+    <article class="news-container" id="blog">
       <div class="wrapper clearfix">
         <h2>Latest News</h2>
         <h3 class="decoration">Starting your own IT business and picking the right niche in less than 30 days</h3>
@@ -356,7 +357,7 @@
       </form>
     </section>
   </main>
-  <footer>
+  <footer id="contact">
     <div class="top-footer">
       <div class="wrapper">
         <div class="footer-contact">
@@ -396,12 +397,12 @@
         <img src="images/logo.png" alt="Lisbon Logo">
           <nav class="footer__nav">
             <ul>
-              <li class="footer__item text__uppercase"><a href="#">Home</a></li>
-              <li class="footer__item text__uppercase"><a href="#">Speakers</a></li>
-              <li class="footer__item text__uppercase"><a href="#">Schedule</a></li>
-              <li class="footer__item text__uppercase"><a href="#">Gallery</a></li>
-              <li class="footer__item text__uppercase"><a href="#">Sponsors</a></li>
-              <li class="footer__item text__uppercase"><a href="#">Venues</a></li>
+              <li class="text__uppercase"><a href="#">Home</a></li>
+              <li class="text__uppercase"><a href="#">Speakers</a></li>
+              <li class="text__uppercase"><a href="#">Schedule</a></li>
+              <li class="text__uppercase"><a href="#">Gallery</a></li>
+              <li class="text__uppercase"><a href="#">Sponsors</a></li>
+              <li class="text__uppercase"><a href="#">Venues</a></li>
             </ul>
           </nav>
         <p>Copyright &copy; <span>Lisbon</span> 2017</p>

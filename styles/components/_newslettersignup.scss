@@ -1,5 +1,5 @@
 .newsletter-signup {
-  background: url(../../images/pattern-4.png);
+  background: url(../images/pattern-4.png);
   text-align: center;
   margin-top: 80px;
   form {
@@ -35,5 +35,13 @@
     button {
       margin-top: 20px;
     }
+    form {
+      padding-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .newsletter-signup form {
+    padding-bottom: 30px;
   }
 }

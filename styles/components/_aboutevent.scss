@@ -29,12 +29,27 @@
 }
 @media (max-width: 1400px) {
   .about-event .about-event__group{
-      margin: 0 auto;
-      display: block;
-      max-width: 100%;
     .group__individual {
+      margin: 25px auto;
+      display: block;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .about-event .about-event__group {
+    display: block;
+    margin: auto;
+    .group__individual {
+      max-width: 300px;
       margin: 0 auto;
       display: block;
+      padding-top: 20px;
+      img {
+        max-width: 100%;
+      }
+    }
+    .group__individual:hover {
+      transform: none;
     }
   }
 }

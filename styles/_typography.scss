@@ -109,7 +109,6 @@ h6 {
   font-weight: 600px;
   line-height: 26px;
   text-align: left;
-
 }
 .countdown-timer p,
 .pricing p {
@@ -250,14 +249,27 @@ blockquote {
 @media (max-width: 1024px) {
   header {
     h1 {
-      @include fontSize(30);
+      @include fontSize(30); 
     }
     h2 {
       @include fontSize(15);
-    }
+    } 
   }
   .countdown-timer h4,
   .countdown-timer .countdown--space {
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    padding-top: 20px;
+    margin: 20px;
+  }
+  .pricing .wrapper h2 {
+    margin-top: 20px;
+    padding-top: 40px;
+  }
+  .quote blockquote strong {
+    @include fontSize(25);
   }
 }

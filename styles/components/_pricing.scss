@@ -1,5 +1,5 @@
 .pricing {
-  background: url(../../images/pricing-image.png) no-repeat top, linear-gradient(180deg, $white 50%, $white 50%);
+  background: url(../images/pricing-image.png) no-repeat top, linear-gradient(180deg, $white 50%, $white 50%);
   h2 {
     padding-top: 130px;
   }
@@ -57,5 +57,11 @@
 
     //    }
     // }
+  }
+}
+@media (max-width: 1024px) {
+  .pricing .pricing__container {
+    background-color: transparent;
+    margin: 0 auto 30px;
   }
 }
