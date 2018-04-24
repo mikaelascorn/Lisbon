@@ -249,7 +249,7 @@ blockquote {
 @media (max-width: 1024px) {
   header {
     h1 {
-      @include fontSize(30); 
+      @include fontSize(33); 
     }
     h2 {
       @include fontSize(15);
@@ -271,5 +271,12 @@ blockquote {
   }
   .quote blockquote strong {
     @include fontSize(25);
+  }
+}
+@media (max-width: 320px) {
+  header {
+    h1 {
+      @include fontSize(25); 
+    }   
   }
 }

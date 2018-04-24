@@ -82,7 +82,8 @@
       margin: 0 auto;
       margin-top: 35px;
       clear: both;
-      float: none;      
+      float: none;  
+      height: 630px;   
     }
   }
 }
@@ -96,8 +97,8 @@
       margin: auto;
       min-height: 601px;
       .grid-gap {
-      display: block;
-      height: 600px;
+        display: block;
+        height: 550px;
       img {
         float: none;
         max-width: 100%;
@@ -112,13 +113,16 @@
     }
     .news-container--individual {
       padding-top: 10px;
-      width: 100%;
+      // width: 100%;
       float: none;
       margin-top: 25px;
       display: block;
+      width: 300px;
+      min-height: 320px;
     }
     .news-container--aside {
       width: 300px;
+      height: 580px;
       img {
         max-width: 100%;
       }

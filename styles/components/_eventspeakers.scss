@@ -73,6 +73,12 @@
     }
   }
 }
+@media(max-width: 1024px) {
+  .event-speakers .event-speaker__section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 768px) {
   .event-speakers {
     border: 1px solid;

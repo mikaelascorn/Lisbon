@@ -406,8 +406,8 @@ blockquote {
 
 @media (max-width: 1024px) {
   header h1 {
-    font-size: 30px;
-    font-size: 3rem; }
+    font-size: 33px;
+    font-size: 3.3rem; }
   header h2 {
     font-size: 15px;
     font-size: 1.5rem; }
@@ -423,6 +423,11 @@ blockquote {
     margin-top: 20px;
     padding-top: 40px; }
   .quote blockquote strong {
+    font-size: 25px;
+    font-size: 2.5rem; } }
+
+@media (max-width: 320px) {
+  header h1 {
     font-size: 25px;
     font-size: 2.5rem; } }
 
@@ -456,8 +461,7 @@ header {
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-direction: flex-end;
-    flex-direction: flex-end;
-    padding-top: 15px; }
+    flex-direction: flex-end; }
     header .header__wrapper .img-flex {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -561,7 +565,7 @@ header {
       header .wrapper .header__nav {
         display: inline; }
       header .wrapper .main-header__hero {
-        height: calc(100% - 125px); }
+        height: calc(100% - 60px); }
         header .wrapper .main-header__hero .header__arrow {
           top: calc(50% - 153px); } }
 
@@ -591,7 +595,9 @@ header {
     position: absolute;
     display: block;
     right: 45px;
-    top: 45px; }
+    top: 20px; }
+  header .wrapper img {
+    max-width: 100px; }
   header .wrapper #open:checked ~ .header__nav .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -615,6 +621,10 @@ header {
       height: calc(100% - 30px); }
     header .wrapper .main-header__hero .header__arrow {
       top: calc(50% - 160px); } }
+
+@media (max-width: 320px) {
+  header .main-header__hero img {
+    width: 12px; } }
 
 .top-footer {
   background-color: #1b1b1b;
@@ -853,6 +863,10 @@ header {
     .countdown-timer .countdown-timer__counter p:first-of-type {
       margin: 0; } }
 
+@media (max-width: 320px) {
+  .countdown-timer .countdown-timer__timer--button p:first-of-type {
+    margin-right: 0px; } }
+
 .about-event {
   text-align: center; }
   .about-event .about-event__group {
@@ -1025,6 +1039,11 @@ header {
   .event-speakers figure {
     margin: 0 auto; } }
 
+@media (max-width: 1024px) {
+  .event-speakers .event-speaker__section {
+    max-width: 600px;
+    margin: 0 auto; } }
+
 @media (max-width: 768px) {
   .event-speakers {
     border: 1px solid; }
@@ -1071,7 +1090,9 @@ header {
       margin-bottom: 25px;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      position: relative;
+      overflow: hidden; }
       .pricing .pricing__container .pricing__individual h5 {
         margin-top: 50px;
         margin-bottom: 5px; }
@@ -1090,25 +1111,34 @@ header {
     .pricing .pricing__container .pricing__best {
       position: relative; }
       .pricing .pricing__container .pricing__best .pricing__best--offer {
-        height: 0;
+        height: 50px;
+        width: 150px;
         position: absolute;
-        left: 220px;
-        top: 20px; }
+        left: 237px;
+        background: #463f8c;
+        top: 10px;
+        border: 1px solid #463f8c;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
         .pricing .pricing__container .pricing__best .pricing__best--offer p {
           color: #ffffff;
-          background-color: #463f8c;
-          border: 1px solid #463f8c;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-          padding: 10px;
-          margin: 10px;
-          overflow: hidden; }
+          padding-top: 10px; }
 
 @media (max-width: 1024px) {
   .pricing .pricing__container {
     background-color: transparent;
-    margin: 0 auto 30px; } }
+    margin: 0 auto 30px; }
+    .pricing .pricing__container .pricing__individual {
+      height: 450px; }
+      .pricing .pricing__container .pricing__individual li {
+        line-height: 40px; }
+      .pricing .pricing__container .pricing__individual h5 {
+        margin-top: 25px; } }
+
+@media (max-width: 480px) {
+  .pricing .pricing__container .pricing__individual {
+    max-width: 300px; } }
 
 .schedule {
   background: #fafafa; }
@@ -1198,6 +1228,9 @@ header {
         float: none;
         display: block;
         margin: 0 auto; }
+    .schedule .schedule-event .schedule-decoration {
+      padding: 0px;
+      border-right: 0px; }
   .schedule .schedule__section {
     display: block; } }
 
@@ -1344,7 +1377,8 @@ header {
       margin: 0 auto;
       margin-top: 35px;
       clear: both;
-      float: none; } }
+      float: none;
+      height: 630px; } }
 
 @media (max-width: 768px) {
   .news-container .wrapper {
@@ -1357,7 +1391,7 @@ header {
       min-height: 601px; }
       .news-container .wrapper .news-container__grid .grid-gap {
         display: block;
-        height: 600px; }
+        height: 550px; }
         .news-container .wrapper .news-container__grid .grid-gap img {
           float: none;
           max-width: 100%; }
@@ -1367,12 +1401,14 @@ header {
       margin-left: 0px; }
     .news-container .wrapper .news-container--individual {
       padding-top: 10px;
-      width: 100%;
       float: none;
       margin-top: 25px;
-      display: block; }
+      display: block;
+      width: 300px;
+      min-height: 320px; }
     .news-container .wrapper .news-container--aside {
-      width: 300px; }
+      width: 300px;
+      height: 580px; }
       .news-container .wrapper .news-container--aside img {
         max-width: 100%; } }
 
@@ -1382,14 +1418,25 @@ header {
   margin-top: 80px; }
   .newsletter-signup form {
     margin: 0 auto;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
     .newsletter-signup form label {
       display: none; }
     .newsletter-signup form input {
       background: #ffffff;
       width: 621px;
       height: 48px;
-      border: 1px solid #ffffff; }
+      border: 1px solid #ffffff;
+      display: block; }
     .newsletter-signup form input::-webkit-input-placeholder {
       font-size: 14px;
       font-size: 1.4rem;
@@ -1423,19 +1470,22 @@ header {
       font-weight: 400;
       padding-left: 30px; }
     .newsletter-signup form button {
-      height: 48px; }
+      height: 48px;
+      display: block; }
 
 @media (max-width: 1024px) {
   .newsletter-signup input {
     max-width: 350px; }
-  .newsletter-signup button {
-    margin-top: 20px; }
   .newsletter-signup form {
     padding-bottom: 30px; } }
 
 @media (max-width: 768px) {
   .newsletter-signup form {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+    .newsletter-signup form input {
+      max-width: 300px; }
+    .newsletter-signup form button {
+      margin-top: 20px; } }
 
 body {
   color: white;

@@ -7,9 +7,7 @@
     padding-bottom: 110px;
     flex-flow: row wrap;
     .schedule-decoration {
-      // border-right: 1px solid red;
       border-right: 1px dashed #ececec;
-      // margin-right: 10px;
       height: 363px;
       padding: 0px 45px;
       margin-top: 45px;
@@ -87,6 +85,10 @@
           display: block;
           margin: 0 auto;
         }
+      }
+      .schedule-decoration {
+        padding: 0px;
+        border-right: 0px;
       }
     }
     .schedule__section {

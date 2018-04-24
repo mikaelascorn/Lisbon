@@ -23,6 +23,8 @@
       height: 568px;
       margin-bottom: 25px;
       transition: all 0.5s;
+      position: relative;
+      overflow: hidden;
       h5 {
         margin-top: 50px;
         margin-bottom: 5px;
@@ -47,19 +49,17 @@
     .pricing__best {
       position: relative;
       .pricing__best--offer {
-        height: 0; 
+        height: 50px; 
+        width: 150px;
         position: absolute;
-        left: 220px;
-        top: 20px;
-        // overflow: hidden;
+        left: 237px;
+        background: $purple;
+        top: 10px;
+        border: 1px solid $purple;
+        transform: rotate(45deg);
         p {
           color: $white;
-          background-color: $purple;
-          border: 1px solid $purple; 
-          transform: rotate(45deg);
-          padding: 10px; 
-          margin: 10px;
-          overflow: hidden;
+          padding-top: 10px;
         }
       }
     }
@@ -69,5 +69,27 @@
   .pricing .pricing__container {
     background-color: transparent;
     margin: 0 auto 30px;
+    .pricing__individual {
+      height: 450px;
+      li {
+        line-height: 40px;
+      }
+      h5 {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .pricing .pricing__container {
+    .pricing__individual {
+      max-width: 300px;
+      .pricing__best {
+        .pricing__best--offer {
+          // left: 189px;
+          // position: absolute;
+        }
+      }
+    }
   }
 }

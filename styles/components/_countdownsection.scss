@@ -114,3 +114,10 @@
     }
   }
 }
+@media(max-width: 320px) {
+  .countdown-timer .countdown-timer__timer--button {
+    p:first-of-type {
+      margin-right: 0px;
+    }
+  }
+}
