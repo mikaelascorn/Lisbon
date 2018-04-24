@@ -15,34 +15,37 @@ header {
     width: 100%;
     height: 3px;
   }
-  .header__nav {
+  .header__wrapper {
     display: flex;
-    flex-flow: row;
-    // justify-content: space-between;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: flex-end;
+    padding-top: 15px;
+    .img-flex {
+      display: flex;
+      flex: 2 0 100px;
+      align-items: center;
+    }
     img {
-      max-width: 100px;
-      // display: flex;
-      flex-grow: 2;
+      max-width: 200px;
     }
-    .fa-times {
-      display: none;
-    }
-    input {
-      display: none;
-    }
+  }
+  input {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+  .header__nav {
+    flex-grow: 1;
     .nav__list {
       display: flex;
       list-style: none;
-      padding-left: 0;
-      // justify-content: space-between;
-      justify-content: flex-end;
-      flex-grow: 0.5;
-      flex-shrink: 2;
+      align-items: center;
+      justify-content: space-between;
       li {
-        align-content: center;
-        padding: 20px 0;
-        justify-content: space-between;
+        align-items: center;
         border-bottom: 1px solid transparent;
         a {
         color: $white;
@@ -62,7 +65,7 @@ header {
         text-align: center;
       .fa-search {
         position: relative;
-        top: calc(50% - 7.5px);
+        top: calc(50% - 10px);
         padding: 0;
       } 
     } 
@@ -112,9 +115,9 @@ header {
         display: inline;
       }
       .main-header__hero {
-        height: calc(100% - 250px);
+        height: calc(100% - 125px);
         .header__arrow {
-          top: calc(50% - 240px);
+          top: calc(50% - 153px);
         }
       }
     }
@@ -122,32 +125,36 @@ header {
 }
 @media (max-width: 768px) {
   header .wrapper {
-  .header__nav--hidden {
+    label {
+      display: block;
+    }
+    .header__nav--hidden {
       display: flex;
       flex: row;
       align-items: center;
       justify-content: space-between;
-    }
+      }
     .nav__list {
       display: none;
       background-color: rgba(0, 0, 0, 0.8);    
-    	transition: all 0.3s ease-in;
+      transition: all 5s ease-in;
     }
     .fa-times {
       position: absolute;
       display: block;
       right: 45px;
-      top: 20px;
+      top: 45px;
     }
-    #open:checked ~ .nav__list {
+    #open:checked ~ .header__nav .nav__list {
       display: flex;
       flex-direction: column;
       position: absolute;
       width: 200px;
       right: 35px;
       border-radius: 8px;
-      li {
+      li:not(.search) {
         text-align: center;
+        line-height: 45px;
       }
       .search {
         margin: 10px auto 30px;
