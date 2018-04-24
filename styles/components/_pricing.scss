@@ -40,23 +40,23 @@
         max-width: 175px;
       }
     }
-    // .pricing__best {
-    //   position: relative;
-    // }
-    // .pricing__best--offer {
-    //    border-bottom: 30px solid $purple; 
-    //    border-left: 25px solid transparent; 
-    //    border-right: 25px solid transparent; 
-    //    border-top: 10px solid transparent;
-    //    height: 0; 
-    //    width: 50px;
-    //    position: absolute;
-    //    right: 0px;
-    //    top: 0px;
-    //    p {
-
-    //    }
-    // }
+    .pricing__best {
+      position: relative;
+      .pricing__best--offer {
+        height: 0; 
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        p {
+          color: $white;
+          background-color: $purple;
+          border: 1px solid $purple; 
+          transform: translateY(90deg);
+          padding: 0px; 
+          // margin: 10px;
+        }
+      }
+    }
   }
 }
 @media (max-width: 1024px) {

@@ -449,14 +449,14 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-flow: row;
     flex-flow: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
     header .header__nav img {
-      max-width: 100px; }
+      max-width: 100px;
+      -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+      flex-grow: 2; }
     header .header__nav .fa-times {
       display: none; }
     header .header__nav input {
@@ -467,12 +467,14 @@ header {
       display: flex;
       list-style: none;
       padding-left: 0;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
       -webkit-box-flex: 0.5;
       -ms-flex-positive: 0.5;
-      flex-grow: 0.5; }
+      flex-grow: 0.5;
+      -ms-flex-negative: 2;
+      flex-shrink: 2; }
       header .header__nav .nav__list li {
         -ms-flex-line-pack: center;
         align-content: center;
@@ -568,7 +570,10 @@ header {
     justify-content: space-between; }
   header .wrapper .nav__list {
     display: none;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
   header .wrapper .fa-times {
     position: absolute;
     display: block;
@@ -754,12 +759,17 @@ header {
         height: 45px;
         line-height: 4rem;
         display: inline-block;
-        margin-right: 4px;
+        margin-right: 8px;
         border-radius: 3px; }
       .countdown-timer .countdown-timer__counter .countdown-timer__timer--time .timer--space {
-        margin-right: 5px; }
+        margin-right: 8px; }
       .countdown-timer .countdown-timer__counter .countdown-timer__timer--time .timer--span {
-        color: #222222; }
+        color: #222222;
+        margin-left: 10px; }
+      .countdown-timer .countdown-timer__counter .countdown-timer__timer--time .timer--span1 {
+        margin-left: 10px; }
+      .countdown-timer .countdown-timer__counter .countdown-timer__timer--time .counter-day {
+        margin-left: 11px; }
   .countdown-timer .countdown-timer__timer--button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -767,7 +777,7 @@ header {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .countdown-timer .countdown-timer__timer--button p:first-of-type {
-      margin-right: 5px; }
+      margin-right: 7px; }
 
 @media (max-width: 1400px) {
   .countdown-timer .countdown--space {
@@ -777,7 +787,7 @@ header {
     display: -ms-flexbox;
     display: flex; }
     .countdown-timer .countdown-timer__timer--button p:first-of-type {
-      margin-right: 0px; }
+      margin-right: 8px; }
     .countdown-timer .countdown-timer__timer--button .button {
       padding-bottom: 10px; } }
 
@@ -797,7 +807,7 @@ header {
       display: inline-block;
       text-align: center; }
       .countdown-timer .countdown-timer__timer .countdown-timer__timer--time .timer--space {
-        margin-right: 20px; }
+        margin-right: 8px; }
   .countdown-timer .countdown-timer__timer--button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1057,6 +1067,21 @@ header {
         margin: 0 auto;
         display: block;
         max-width: 175px; }
+    .pricing .pricing__container .pricing__best {
+      position: relative; }
+      .pricing .pricing__container .pricing__best .pricing__best--offer {
+        height: 0;
+        position: absolute;
+        right: 0px;
+        top: 10px; }
+        .pricing .pricing__container .pricing__best .pricing__best--offer p {
+          color: #ffffff;
+          background-color: #463f8c;
+          border: 1px solid #463f8c;
+          -webkit-transform: translateY(90deg);
+          -ms-transform: translateY(90deg);
+          transform: translateY(90deg);
+          padding: 0px; }
 
 @media (max-width: 1024px) {
   .pricing .pricing__container {
@@ -1080,6 +1105,11 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap; }
+    .schedule .schedule-event .schedule-decoration {
+      border-right: 1px dashed #ececec;
+      height: 363px;
+      padding: 0px 45px;
+      margin-top: 45px; }
     .schedule .schedule-event .schedule-aside {
       border: 1px solid #ececec;
       -webkit-box-sizing: border-box;
@@ -1087,9 +1117,9 @@ header {
       background-color: #ffffff;
       width: 281px;
       height: 88px;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s; }
+      -webkit-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in; }
       .schedule .schedule-event .schedule-aside p {
         margin-left: 40px;
         line-height: 0px; }
@@ -1100,7 +1130,7 @@ header {
       .schedule .schedule-event .schedule-aside:hover p, .schedule .schedule-event .schedule-aside:hover strong {
         color: #ffffff; }
     .schedule .schedule-event .schedule-people {
-      max-width: 800px; }
+      max-width: 792px; }
       .schedule .schedule-event .schedule-people .schedule--image {
         display: -webkit-box;
         display: -ms-flexbox;

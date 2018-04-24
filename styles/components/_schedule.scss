@@ -6,13 +6,21 @@
     align-items: center;
     padding-bottom: 110px;
     flex-flow: row wrap;
+    .schedule-decoration {
+      // border-right: 1px solid red;
+      border-right: 1px dashed #ececec;
+      // margin-right: 10px;
+      height: 363px;
+      padding: 0px 45px;
+      margin-top: 45px;
+    }
     .schedule-aside {
       border: 1px solid $backgroundLight;
       box-sizing: border-box;
       background-color: $white;
       width: 281px;
       height: 88px;
-      transition: all 0.5s;
+      transition: all 0.5s ease-in;
       p {
         margin-left: 40px;
         line-height: 0px;
@@ -28,7 +36,7 @@
       }
     }
     .schedule-people {
-      max-width: 800px;
+      max-width: (800px - 8px);
       .schedule--image {
         display: flex;
         align-items: center;
