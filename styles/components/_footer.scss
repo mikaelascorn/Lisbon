@@ -70,6 +70,10 @@
     li {
       list-style-type: none;
       margin: 0 auto;
+      padding: 10px;
+    }
+    a:hover {
+      color: $pink;
     }
   }
   p {

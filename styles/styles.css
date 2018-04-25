@@ -595,7 +595,10 @@ header {
     position: absolute;
     display: block;
     right: 45px;
-    top: 20px; }
+    top: 20px;
+    -webkit-transition: all 5s ease-in;
+    -o-transition: all 5s ease-in;
+    transition: all 5s ease-in; }
   header .wrapper img {
     max-width: 100px; }
   header .wrapper #open:checked ~ .header__nav .nav__list {
@@ -609,10 +612,11 @@ header {
     position: absolute;
     width: 200px;
     right: 35px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    padding-left: 0px; }
     header .wrapper #open:checked ~ .header__nav .nav__list li:not(.search) {
       text-align: center;
-      line-height: 45px; }
+      padding: 20px; }
     header .wrapper #open:checked ~ .header__nav .nav__list .search {
       margin: 10px auto 30px; }
   header .wrapper .main-header__hero {
@@ -719,7 +723,10 @@ header {
     padding: 5px; }
     .lower-footer .footer__nav ul li {
       list-style-type: none;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 10px; }
+    .lower-footer .footer__nav ul a:hover {
+      color: #e85889; }
   .lower-footer p {
     padding-top: 35px;
     text-align: center; }
@@ -1106,24 +1113,29 @@ header {
         margin: 0 auto;
         display: block;
         max-width: 175px; }
+    .pricing .pricing__container .pricing__best--offer {
+      height: 50px;
+      width: 150px;
+      position: absolute;
+      left: 237px;
+      background: #463f8c;
+      top: 10px;
+      border: 1px solid #463f8c;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+      .pricing .pricing__container .pricing__best--offer p {
+        color: #ffffff;
+        padding-top: 10px; }
     .pricing .pricing__container .pricing__individual:hover {
-      border-color: #e85889; }
+      border-color: #e85889;
+      -webkit-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
+      box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
+      -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      transform: scale(1.02); }
     .pricing .pricing__container .pricing__best {
       position: relative; }
-      .pricing .pricing__container .pricing__best .pricing__best--offer {
-        height: 50px;
-        width: 150px;
-        position: absolute;
-        left: 237px;
-        background: #463f8c;
-        top: 10px;
-        border: 1px solid #463f8c;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg); }
-        .pricing .pricing__container .pricing__best .pricing__best--offer p {
-          color: #ffffff;
-          padding-top: 10px; }
 
 @media (max-width: 1024px) {
   .pricing .pricing__container {
@@ -1138,7 +1150,9 @@ header {
 
 @media (max-width: 480px) {
   .pricing .pricing__container .pricing__individual {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .pricing .pricing__container .pricing__best .pricing__best--offer {
+    left: 189px; } }
 
 .schedule {
   background: #fafafa; }

@@ -43,28 +43,31 @@
         max-width: 175px;
       }
     }
+    .pricing__best--offer {
+      height: 50px; 
+      width: 150px;
+      position: absolute;
+      left: 237px;
+      background: $purple;
+      top: 10px;
+      border: 1px solid $purple;
+      transform: rotate(45deg);
+      p {
+        color: $white;
+        padding-top: 10px;
+      }
+    }
     .pricing__individual:hover {
       border-color: $pink;
+      box-shadow: 2px 4px 16px 0px rgba( 0, 0, 0, 0.04);
+      transform: scale(1.02);
     }
     .pricing__best {
       position: relative;
-      .pricing__best--offer {
-        height: 50px; 
-        width: 150px;
-        position: absolute;
-        left: 237px;
-        background: $purple;
-        top: 10px;
-        border: 1px solid $purple;
-        transform: rotate(45deg);
-        p {
-          color: $white;
-          padding-top: 10px;
-        }
-      }
     }
   }
 }
+
 @media (max-width: 1024px) {
   .pricing .pricing__container {
     background-color: transparent;
@@ -84,11 +87,10 @@
   .pricing .pricing__container {
     .pricing__individual {
       max-width: 300px;
-      .pricing__best {
-        .pricing__best--offer {
-          // left: 189px;
-          // position: absolute;
-        }
+    }
+  .pricing__best {
+    .pricing__best--offer {
+      left: 189px;
       }
     }
   }
