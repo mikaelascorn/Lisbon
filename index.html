@@ -31,16 +31,12 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <a href="#content" class="skip">Skip to main content</a>
   <header>
     <!-- HEADER SECTION - NAVIGATION STARTS -->
     <div class="wrapper">
       <div class="header__wrapper " id="home">
-        <input type="checkbox" id="open" name="open">
-        <div class="header-logo">
-          <label for="open" id="open">
-            <i class="fa fa-times"></i>
-          </label>
-        </div>
+        <i class="fa fa-times"></i>
         <div class="img-flex">
           <img src="images/logo.png" alt="Lisbon Logo">
         </div>
@@ -77,7 +73,7 @@
   <main>
     <!-- MAIN SECTIONS STARTS -->
     <!-- COUNTDOWN TIMER STARTS -->
-    <section class="countdown-timer">
+    <section class="countdown-timer" id="content">
       <div class="wrapper">
         <div class="countdown-timer__timer">
           <div class="countdown-timer__header">
@@ -440,5 +436,34 @@
     </div>
   </footer>
   <!-- FOOTER ENDS -->
+  <!-- JAVASCRIPT - SMOOTH SCROLL AND MOBILE MENU -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+  <script>
+
+    $(function (){
+      $('.header__wrapper .fa-times').on('click', function () {
+        $('.nav__list').toggle();
+    })
+    
+    var m = $(".header__wrapper .fa-times");
+
+    m.on('click', function () {
+      if (m.hasClass('fa-bars')) {
+        m
+          .removeClass('fa-bars')
+          .addClass('fa-times');
+      } else {
+        m
+          .removeClass('fa-times')
+          .addClass('fa-bars');
+      }
+    });
+
+    $('a').smoothScroll();
+
+  });
+</script>
+
 </body>
 </html>
