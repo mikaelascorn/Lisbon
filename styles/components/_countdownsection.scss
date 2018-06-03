@@ -1,6 +1,6 @@
 .countdown-timer {
   background: $backgroundTimer;
-  min-height: 260px;
+  min-height: 230px;
   p {
     margin: 0;
   }
@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    min-height: 260px;
+    min-height: 280px;
   }
   .countdown-timer__header {
     max-width: 25%;
@@ -101,7 +101,7 @@
     }
   }
 }
-@media(max-width: 480px) {
+@media(max-width: 505px) {
   .countdown-timer {
     .countdown-timer__counter {
       display: flex;

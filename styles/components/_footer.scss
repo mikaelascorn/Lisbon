@@ -55,10 +55,15 @@
 .lower-footer {
   background-color: $bottomFooter;
   min-height: 350px;
-  img {
+  .lisbon_logo {
     display: block;
     margin: 0 auto;
     padding: 50px 0px;
+  }
+  svg {
+    height: 25px;
+    width: 25px;
+    color: white;
   }
   .footer__nav ul {
     display: flex;
@@ -79,6 +84,20 @@
   p {
     padding-top: 35px;
     text-align: center;
+  }
+  .mikaela {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+    font-family: 'Poppins', sans-serif;
+    color: $grey;
+    @include fontSize(14);
+    }
+    a:hover {
+      color: $pink;
+    }
   }
 }
 

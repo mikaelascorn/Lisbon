@@ -585,59 +585,15 @@ header {
         header .wrapper .main-header__hero .header__arrow {
           top: calc(50% - 153px); } }
 
-@media (min-width: 768px) {
-  header .wrapper .header__nav {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1; }
-    header .wrapper .header__nav .nav__list {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      list-style: none;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      header .wrapper .header__nav .nav__list li {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        border-bottom: 1px solid transparent; }
-        header .wrapper .header__nav .nav__list li a {
-          color: #ffffff;
-          text-decoration: none; }
-      header .wrapper .header__nav .nav__list li:hover {
-        border-bottom: 1px solid #e85889; }
-      header .wrapper .header__nav .nav__list .search {
-        margin-top: 5px;
-        width: 50px;
-        height: 50px;
-        padding: 0;
-        background: #e85889;
-        border-radius: 50%;
-        text-align: center; }
-        header .wrapper .header__nav .nav__list .search .fa-search {
-          position: relative;
-          top: calc(50% - 10px);
-          padding: 0; } }
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  header .wrapper .toggle {
+    display: block; }
   header .wrapper .nav__list {
     display: none;
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     padding: 10px 40px;
     border-radius: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     right: 50px;
     top: 30px;
     z-index: 4; }
@@ -738,10 +694,14 @@ header {
 .lower-footer {
   background-color: #100f0f;
   min-height: 350px; }
-  .lower-footer img {
+  .lower-footer .lisbon_logo {
     display: block;
     margin: 0 auto;
     padding: 50px 0px; }
+  .lower-footer svg {
+    height: 25px;
+    width: 25px;
+    color: white; }
   .lower-footer .footer__nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -765,6 +725,24 @@ header {
   .lower-footer p {
     padding-top: 35px;
     text-align: center; }
+  .lower-footer .mikaela {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .lower-footer .mikaela a {
+      font-family: 'Poppins', sans-serif;
+      color: #777777;
+      font-size: 14px;
+      font-size: 1.4rem; }
+    .lower-footer .mikaela a:hover {
+      color: #e85889; }
 
 @media (max-width: 1024px) {
   .top-footer .wrapper {
@@ -791,7 +769,7 @@ header {
 
 .countdown-timer {
   background: #fafafa;
-  min-height: 260px; }
+  min-height: 230px; }
   .countdown-timer p {
     margin: 0; }
   .countdown-timer .countdown-timer__timer {
@@ -810,7 +788,7 @@ header {
     align-items: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    min-height: 260px; }
+    min-height: 280px; }
   .countdown-timer .countdown-timer__header {
     max-width: 25%; }
   .countdown-timer .countdown-timer__counter {
@@ -887,7 +865,7 @@ header {
     .countdown-timer .countdown-timer__timer--button p:first-of-type {
       margin-right: 25px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 505px) {
   .countdown-timer .countdown-timer__counter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -949,7 +927,10 @@ header {
 @media (max-width: 1400px) {
   .about-event .about-event__group .group__individual {
     margin: 25px auto;
-    display: block; } }
+    display: block; }
+  .about-event .about-event__group .group__individual--last {
+    display: block;
+    margin: 25px auto; } }
 
 @media (max-width: 480px) {
   .about-event .about-event__group {
@@ -1416,7 +1397,7 @@ header {
     .news-container .wrapper .news-container--aside h6 {
       margin-top: 80px; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   .news-container .wrapper {
     max-width: 100%; }
     .news-container .wrapper .news-container__grid {
@@ -1427,7 +1408,11 @@ header {
       margin-top: 35px;
       clear: both;
       float: none;
-      height: 630px; } }
+      height: 630px;
+      width: 300px;
+      height: 580px; }
+      .news-container .wrapper .news-container--aside img {
+        max-width: 100%; } }
 
 @media (max-width: 768px) {
   .news-container .wrapper {
@@ -1454,12 +1439,7 @@ header {
       margin-top: 25px;
       display: block;
       width: 300px;
-      min-height: 320px; }
-    .news-container .wrapper .news-container--aside {
-      width: 300px;
-      height: 580px; }
-      .news-container .wrapper .news-container--aside img {
-        max-width: 100%; } }
+      min-height: 320px; } }
 
 .newsletter-signup {
   background: url(../images/pattern-4.png);
@@ -1533,7 +1513,8 @@ header {
     padding-bottom: 30px; }
     .newsletter-signup form input {
       max-width: 300px; }
-    .newsletter-signup form button {
+    .newsletter-signup form button,
+    .newsletter-signup form input {
       margin-top: 20px; } }
 
 body {
